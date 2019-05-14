@@ -8,7 +8,6 @@ public BaseResponse<Map<String, Object>> selecteH5PageRate(@RequestBody JSONObje
 		request.setMonyEnter(CalculationUtil.multip(bizContent.getString("enter"), "1000000").toString());
 		Calendar calendar = Calendar.getInstance();
 	    calendar.add(Calendar.YEAR,1);
-
 	    calendar.add(Calendar.DAY_OF_YEAR,-1);
 	    calendar.set(Calendar.HOUR_OF_DAY, 0);
         calendar.set(Calendar.MINUTE, 0);
